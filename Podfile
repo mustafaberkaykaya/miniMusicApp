@@ -6,6 +6,11 @@ target 'miniMusicApp' do
   use_frameworks!
 
   # Pods for miniMusicApp
+  # UI
+  pod 'TinyConstraints', '~> 4.0'
+  
+  # Network
+  pod 'Alamofire', '~> 5.6'
 
   target 'miniMusicAppTests' do
     inherit! :search_paths
