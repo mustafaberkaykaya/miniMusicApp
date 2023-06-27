@@ -1,0 +1,6 @@
+framework module Pods_miniMusicApp {
+  umbrella header "Pods-miniMusicApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
