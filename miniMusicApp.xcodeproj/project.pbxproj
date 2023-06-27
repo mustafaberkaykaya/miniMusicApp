@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E06C2A4B34CA00288E00 /* AppDelegate.swift */; };
-		0656E06F2A4B34CA00288E00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E06E2A4B34CA00288E00 /* SceneDelegate.swift */; };
 		0656E0712A4B34CA00288E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0702A4B34CA00288E00 /* ViewController.swift */; };
-		0656E0742A4B34CA00288E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0722A4B34CA00288E00 /* Main.storyboard */; };
 		0656E0762A4B34CC00288E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0752A4B34CC00288E00 /* Assets.xcassets */; };
 		0656E0792A4B34CC00288E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */; };
 		0656E0842A4B34CC00288E00 /* miniMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0832A4B34CC00288E00 /* miniMusicAppTests.swift */; };
 		0656E08E2A4B34CC00288E00 /* miniMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E08D2A4B34CC00288E00 /* miniMusicAppUITests.swift */; };
 		0656E0902A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E08F2A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift */; };
+		0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E09D2A4B570A00288E00 /* AppContainer.swift */; };
+		0656E0A02A4B571700288E00 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E09F2A4B571700288E00 /* AppRouter.swift */; };
 		171A991B6850954ACDD53E6A /* Pods_miniMusicApp_miniMusicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */; };
 		38223A3ECBCB9211C3C341B0 /* Pods_miniMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46988D735EA420B56C117FFA /* Pods_miniMusicApp.framework */; };
 		F1DD7909E7443BD26DB9D674 /* Pods_miniMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252809406C8E218357D1994 /* Pods_miniMusicAppTests.framework */; };
@@ -41,9 +41,7 @@
 /* Begin PBXFileReference section */
 		0656E0692A4B34CA00288E00 /* miniMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E06C2A4B34CA00288E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0656E06E2A4B34CA00288E00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0656E0702A4B34CA00288E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0656E0732A4B34CA00288E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0656E0752A4B34CC00288E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0656E0782A4B34CC00288E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0656E07A2A4B34CC00288E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		0656E0892A4B34CC00288E00 /* miniMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E08D2A4B34CC00288E00 /* miniMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniMusicAppUITests.swift; sourceTree = "<group>"; };
 		0656E08F2A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0656E09D2A4B570A00288E00 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		0656E09F2A4B571700288E00 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1A551765E5E2129D39202D78 /* Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miniMusicApp_miniMusicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		359BF2EB4E2A4EDFEAE95C7E /* Pods-miniMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp.release.xcconfig"; path = "Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +116,9 @@
 		0656E06B2A4B34CA00288E00 /* miniMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				0656E09C2A4B56F000288E00 /* App */,
 				0656E06C2A4B34CA00288E00 /* AppDelegate.swift */,
-				0656E06E2A4B34CA00288E00 /* SceneDelegate.swift */,
 				0656E0702A4B34CA00288E00 /* ViewController.swift */,
-				0656E0722A4B34CA00288E00 /* Main.storyboard */,
 				0656E0752A4B34CC00288E00 /* Assets.xcassets */,
 				0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */,
 				0656E07A2A4B34CC00288E00 /* Info.plist */,
@@ -144,6 +143,15 @@
 			path = miniMusicAppUITests;
 			sourceTree = "<group>";
 		};
+		0656E09C2A4B56F000288E00 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0656E09D2A4B570A00288E00 /* AppContainer.swift */,
+				0656E09F2A4B571700288E00 /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		AFAF1B5933B4AE8518CCBE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +172,6 @@
 				E604FD2E237F61DF70C4EF00 /* Pods-miniMusicAppTests.debug.xcconfig */,
 				BEDEF38D9382A27019A2406A /* Pods-miniMusicAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,7 +284,6 @@
 			files = (
 				0656E0792A4B34CC00288E00 /* LaunchScreen.storyboard in Resources */,
 				0656E0762A4B34CC00288E00 /* Assets.xcassets in Resources */,
-				0656E0742A4B34CA00288E00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0656E0712A4B34CA00288E00 /* ViewController.swift in Sources */,
+				0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */,
 				0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */,
-				0656E06F2A4B34CA00288E00 /* SceneDelegate.swift in Sources */,
+				0656E0A02A4B571700288E00 /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,14 +417,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0656E0722A4B34CA00288E00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0656E0732A4B34CA00288E00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -555,7 +554,6 @@
 				INFOPLIST_FILE = miniMusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,7 +581,6 @@
 				INFOPLIST_FILE = miniMusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
