@@ -16,6 +16,19 @@
 		0656E0902A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E08F2A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift */; };
 		0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E09D2A4B570A00288E00 /* AppContainer.swift */; };
 		0656E0A02A4B571700288E00 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E09F2A4B571700288E00 /* AppRouter.swift */; };
+		0656E0A62A4B678200288E00 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0A52A4B678200288E00 /* BaseViewModel.swift */; };
+		0656E0A92A4B67D800288E00 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0A82A4B67D800288E00 /* Closures.swift */; };
+		0656E0AB2A4B680D00288E00 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0AA2A4B680D00288E00 /* BaseViewController.swift */; };
+		0656E0AE2A4B6BE700288E00 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0AD2A4B6BE700288E00 /* SplashViewModel.swift */; };
+		0656E0B02A4B6BF300288E00 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0AF2A4B6BF300288E00 /* SplashViewController.swift */; };
+		0656E0B22A4B6D9000288E00 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0B12A4B6D9000288E00 /* SplashRouter.swift */; };
+		0656E0B52A4B728100288E00 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0B42A4B728100288E00 /* CategoriesViewModel.swift */; };
+		0656E0B72A4B731000288E00 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0B62A4B731000288E00 /* CategoriesViewController.swift */; };
+		0656E0B92A4B73DD00288E00 /* CategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0B82A4B73DD00288E00 /* CategoriesRouter.swift */; };
+		0656E0DF2A4B76DE00288E00 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0656E0DE2A4B76DE00288E00 /* UIComponents.framework */; };
+		0656E0E02A4B76DE00288E00 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0656E0DE2A4B76DE00288E00 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0656E0E92A4CBA1F00288E00 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0E82A4CBA1F00288E00 /* splash.json */; };
+		0656E0EB2A4CC61800288E00 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0EA2A4CC61800288E00 /* loading.json */; };
 		171A991B6850954ACDD53E6A /* Pods_miniMusicApp_miniMusicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */; };
 		38223A3ECBCB9211C3C341B0 /* Pods_miniMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46988D735EA420B56C117FFA /* Pods_miniMusicApp.framework */; };
 		F1DD7909E7443BD26DB9D674 /* Pods_miniMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252809406C8E218357D1994 /* Pods_miniMusicAppTests.framework */; };
@@ -38,6 +51,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0656E0E12A4B76DF00288E00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0656E0E02A4B76DE00288E00 /* UIComponents.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0656E0692A4B34CA00288E00 /* miniMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E06C2A4B34CA00288E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +79,18 @@
 		0656E08F2A4B34CC00288E00 /* miniMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0656E09D2A4B570A00288E00 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		0656E09F2A4B571700288E00 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		0656E0A52A4B678200288E00 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0656E0A82A4B67D800288E00 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		0656E0AA2A4B680D00288E00 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0656E0AD2A4B6BE700288E00 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		0656E0AF2A4B6BF300288E00 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0656E0B12A4B6D9000288E00 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		0656E0B42A4B728100288E00 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		0656E0B62A4B731000288E00 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		0656E0B82A4B73DD00288E00 /* CategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRouter.swift; sourceTree = "<group>"; };
+		0656E0DE2A4B76DE00288E00 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0656E0E82A4CBA1F00288E00 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
+		0656E0EA2A4CC61800288E00 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		1A551765E5E2129D39202D78 /* Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miniMusicApp_miniMusicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		359BF2EB4E2A4EDFEAE95C7E /* Pods-miniMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp.release.xcconfig"; path = "Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0656E0DF2A4B76DE00288E00 /* UIComponents.framework in Frameworks */,
 				38223A3ECBCB9211C3C341B0 /* Pods_miniMusicApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +156,9 @@
 		0656E06B2A4B34CA00288E00 /* miniMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				0656E0E52A4CB9F100288E00 /* Resources */,
+				0656E0A72A4B67C600288E00 /* Constants */,
+				0656E0A32A4B676B00288E00 /* Scenes */,
 				0656E09C2A4B56F000288E00 /* App */,
 				0656E06C2A4B34CA00288E00 /* AppDelegate.swift */,
 				0656E0702A4B34CA00288E00 /* ViewController.swift */,
@@ -152,9 +195,66 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		0656E0A32A4B676B00288E00 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0B32A4B6DC100288E00 /* Categories */,
+				0656E0AC2A4B6AB700288E00 /* Splash */,
+				0656E0A42A4B677300288E00 /* Base */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0656E0A42A4B677300288E00 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0A52A4B678200288E00 /* BaseViewModel.swift */,
+				0656E0AA2A4B680D00288E00 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0656E0A72A4B67C600288E00 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0A82A4B67D800288E00 /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0656E0AC2A4B6AB700288E00 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0AD2A4B6BE700288E00 /* SplashViewModel.swift */,
+				0656E0AF2A4B6BF300288E00 /* SplashViewController.swift */,
+				0656E0B12A4B6D9000288E00 /* SplashRouter.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0656E0B32A4B6DC100288E00 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0B42A4B728100288E00 /* CategoriesViewModel.swift */,
+				0656E0B62A4B731000288E00 /* CategoriesViewController.swift */,
+				0656E0B82A4B73DD00288E00 /* CategoriesRouter.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0656E0E52A4CB9F100288E00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0656E0E82A4CBA1F00288E00 /* splash.json */,
+				0656E0EA2A4CC61800288E00 /* loading.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AFAF1B5933B4AE8518CCBE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0656E0DE2A4B76DE00288E00 /* UIComponents.framework */,
 				46988D735EA420B56C117FFA /* Pods_miniMusicApp.framework */,
 				2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */,
 				5252809406C8E218357D1994 /* Pods_miniMusicAppTests.framework */,
@@ -186,6 +286,8 @@
 				0656E0652A4B34CA00288E00 /* Sources */,
 				0656E0662A4B34CA00288E00 /* Frameworks */,
 				0656E0672A4B34CA00288E00 /* Resources */,
+				2127B3AA7CE0B323DA571289 /* [CP] Embed Pods Frameworks */,
+				0656E0E12A4B76DF00288E00 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +325,7 @@
 				0656E0852A4B34CC00288E00 /* Sources */,
 				0656E0862A4B34CC00288E00 /* Frameworks */,
 				0656E0872A4B34CC00288E00 /* Resources */,
+				2AEA757B53550F473E38EC58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,7 +385,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0656E0E92A4CBA1F00288E00 /* splash.json in Resources */,
 				0656E0792A4B34CC00288E00 /* LaunchScreen.storyboard in Resources */,
+				0656E0EB2A4CC61800288E00 /* loading.json in Resources */,
 				0656E0762A4B34CC00288E00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +409,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2127B3AA7CE0B323DA571289 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AEA757B53550F473E38EC58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		40A51A1F88FFECD3BD24C8B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,9 +517,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0656E0712A4B34CA00288E00 /* ViewController.swift in Sources */,
+				0656E0A62A4B678200288E00 /* BaseViewModel.swift in Sources */,
+				0656E0B72A4B731000288E00 /* CategoriesViewController.swift in Sources */,
+				0656E0B92A4B73DD00288E00 /* CategoriesRouter.swift in Sources */,
 				0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */,
+				0656E0B02A4B6BF300288E00 /* SplashViewController.swift in Sources */,
 				0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */,
+				0656E0B22A4B6D9000288E00 /* SplashRouter.swift in Sources */,
 				0656E0A02A4B571700288E00 /* AppRouter.swift in Sources */,
+				0656E0AB2A4B680D00288E00 /* BaseViewController.swift in Sources */,
+				0656E0A92A4B67D800288E00 /* Closures.swift in Sources */,
+				0656E0AE2A4B6BE700288E00 /* SplashViewModel.swift in Sources */,
+				0656E0B52A4B728100288E00 /* CategoriesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
