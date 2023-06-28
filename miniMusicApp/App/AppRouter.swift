@@ -15,7 +15,7 @@ final class AppRouter {
  
     func startApplication() {
         guard let window = window else { fatalError("Window value cannot be nil") }
-        let viewController = ViewController()
+        let viewController = SplashRouter.create()
         window.rootViewController = viewController
     }
 }

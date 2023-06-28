@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 6f50779b0415855ce508618b1080a2cb2419932b
+PODS:
+  - Alamofire (5.7.1)
+  - lottie-ios (4.2.0)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6)
+  - lottie-ios
+  - TinyConstraints (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 72c7d285a30d81377ec1187a8aceb394bd76e6b7
 
 COCOAPODS: 1.11.3
