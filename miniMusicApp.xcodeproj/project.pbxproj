@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063EB20C2A4F6DEE00975C79 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EB20B2A4F6DEE00975C79 /* DataProvider.framework */; };
+		063EB20D2A4F6DEE00975C79 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 063EB20B2A4F6DEE00975C79 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E06C2A4B34CA00288E00 /* AppDelegate.swift */; };
-		0656E0712A4B34CA00288E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0702A4B34CA00288E00 /* ViewController.swift */; };
 		0656E0762A4B34CC00288E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0752A4B34CC00288E00 /* Assets.xcassets */; };
 		0656E0792A4B34CC00288E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */; };
 		0656E0842A4B34CC00288E00 /* miniMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E0832A4B34CC00288E00 /* miniMusicAppTests.swift */; };
@@ -29,6 +30,10 @@
 		0656E0E02A4B76DE00288E00 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0656E0DE2A4B76DE00288E00 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0656E0E92A4CBA1F00288E00 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0E82A4CBA1F00288E00 /* splash.json */; };
 		0656E0EB2A4CC61800288E00 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0EA2A4CC61800288E00 /* loading.json */; };
+		065DDD092A4DCC9600C861AA /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DDD082A4DCC9600C861AA /* FavoritesViewController.swift */; };
+		065DDD0B2A4DCCA100C861AA /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DDD0A2A4DCCA100C861AA /* FavoritesViewModel.swift */; };
+		065DDD0D2A4DCCAB00C861AA /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DDD0C2A4DCCAB00C861AA /* FavoritesRouter.swift */; };
+		06EE95022A4F2D1200E2AA1B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE95012A4F2D1200E2AA1B /* TabBarController.swift */; };
 		171A991B6850954ACDD53E6A /* Pods_miniMusicApp_miniMusicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */; };
 		38223A3ECBCB9211C3C341B0 /* Pods_miniMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46988D735EA420B56C117FFA /* Pods_miniMusicApp.framework */; };
 		F1DD7909E7443BD26DB9D674 /* Pods_miniMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252809406C8E218357D1994 /* Pods_miniMusicAppTests.framework */; };
@@ -59,6 +64,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0656E0E02A4B76DE00288E00 /* UIComponents.framework in Embed Frameworks */,
+				063EB20D2A4F6DEE00975C79 /* DataProvider.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,9 +72,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		063EB20B2A4F6DEE00975C79 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E0692A4B34CA00288E00 /* miniMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E06C2A4B34CA00288E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0656E0702A4B34CA00288E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0656E0752A4B34CC00288E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0656E0782A4B34CC00288E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0656E07A2A4B34CC00288E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +97,10 @@
 		0656E0DE2A4B76DE00288E00 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E0E82A4CBA1F00288E00 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		0656E0EA2A4CC61800288E00 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		065DDD082A4DCC9600C861AA /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		065DDD0A2A4DCCA100C861AA /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		065DDD0C2A4DCCAB00C861AA /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		06EE95012A4F2D1200E2AA1B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1A551765E5E2129D39202D78 /* Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-miniMusicApp-miniMusicAppUITests/Pods-miniMusicApp-miniMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miniMusicApp_miniMusicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		359BF2EB4E2A4EDFEAE95C7E /* Pods-miniMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniMusicApp.release.xcconfig"; path = "Target Support Files/Pods-miniMusicApp/Pods-miniMusicApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063EB20C2A4F6DEE00975C79 /* DataProvider.framework in Frameworks */,
 				0656E0DF2A4B76DE00288E00 /* UIComponents.framework in Frameworks */,
 				38223A3ECBCB9211C3C341B0 /* Pods_miniMusicApp.framework in Frameworks */,
 			);
@@ -161,7 +172,6 @@
 				0656E0A32A4B676B00288E00 /* Scenes */,
 				0656E09C2A4B56F000288E00 /* App */,
 				0656E06C2A4B34CA00288E00 /* AppDelegate.swift */,
-				0656E0702A4B34CA00288E00 /* ViewController.swift */,
 				0656E0752A4B34CC00288E00 /* Assets.xcassets */,
 				0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */,
 				0656E07A2A4B34CC00288E00 /* Info.plist */,
@@ -198,9 +208,11 @@
 		0656E0A32A4B676B00288E00 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				065DDD072A4DCC6D00C861AA /* Favorites */,
 				0656E0B32A4B6DC100288E00 /* Categories */,
 				0656E0AC2A4B6AB700288E00 /* Splash */,
 				0656E0A42A4B677300288E00 /* Base */,
+				06EE95012A4F2D1200E2AA1B /* TabBarController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -251,9 +263,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		065DDD072A4DCC6D00C861AA /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				065DDD082A4DCC9600C861AA /* FavoritesViewController.swift */,
+				065DDD0A2A4DCCA100C861AA /* FavoritesViewModel.swift */,
+				065DDD0C2A4DCCAB00C861AA /* FavoritesRouter.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		AFAF1B5933B4AE8518CCBE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				063EB20B2A4F6DEE00975C79 /* DataProvider.framework */,
 				0656E0DE2A4B76DE00288E00 /* UIComponents.framework */,
 				46988D735EA420B56C117FFA /* Pods_miniMusicApp.framework */,
 				2ABABF9885AEEAE82DBD02C6 /* Pods_miniMusicApp_miniMusicAppUITests.framework */,
@@ -516,9 +539,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0656E0712A4B34CA00288E00 /* ViewController.swift in Sources */,
+				065DDD0B2A4DCCA100C861AA /* FavoritesViewModel.swift in Sources */,
 				0656E0A62A4B678200288E00 /* BaseViewModel.swift in Sources */,
+				065DDD092A4DCC9600C861AA /* FavoritesViewController.swift in Sources */,
+				065DDD0D2A4DCCAB00C861AA /* FavoritesRouter.swift in Sources */,
 				0656E0B72A4B731000288E00 /* CategoriesViewController.swift in Sources */,
+				06EE95022A4F2D1200E2AA1B /* TabBarController.swift in Sources */,
 				0656E0B92A4B73DD00288E00 /* CategoriesRouter.swift in Sources */,
 				0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */,
 				0656E0B02A4B6BF300288E00 /* SplashViewController.swift in Sources */,
