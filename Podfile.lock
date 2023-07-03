@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.7.1)
+  - Kingfisher (7.8.1)
   - lottie-ios (4.2.0)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.6)
+  - Kingfisher (~> 7.0)
   - lottie-ios
   - TinyConstraints (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - lottie-ios
     - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
   lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 72c7d285a30d81377ec1187a8aceb394bd76e6b7
+PODFILE CHECKSUM: 1c86d61dfe7270cdf5809e2e51694b9f556e31e3
 
 COCOAPODS: 1.11.3

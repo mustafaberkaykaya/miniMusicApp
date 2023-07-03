@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import DataProvider
 
 final class CategoriesRouter {
 
     static func create() -> CategoriesViewController {
-        let viewModel = CategoriesViewModel()
+        let musicRepository = MusicRepository(deezerService: app.service)
+        let viewModel = CategoriesViewModel(musicRepository: musicRepository)
         let viewController = CategoriesViewController(viewModel: viewModel)
         return viewController
     }

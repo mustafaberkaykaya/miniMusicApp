@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063EB1F62A4F6DE300975C79 /* DataProvider.docc in Sources */ = {isa = PBXBuildFile; fileRef = 063EB1F52A4F6DE300975C79 /* DataProvider.docc */; };
+		063EB1FC2A4F6DE300975C79 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EB1F12A4F6DE300975C79 /* DataProvider.framework */; };
+		063EB2012A4F6DE300975C79 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2002A4F6DE300975C79 /* DataProviderTests.swift */; };
+		063EB2022A4F6DE300975C79 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 063EB1F42A4F6DE300975C79 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		063EB2102A4F6E3100975C79 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB20F2A4F6E3100975C79 /* HttpHeader.swift */; };
+		063EB2122A4F6E5A00975C79 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2112A4F6E5A00975C79 /* HttpMethod.swift */; };
+		063EB2142A4F6E9300975C79 /* NetworkConstracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2132A4F6E9300975C79 /* NetworkConstracts.swift */; };
+		063EB2162A4F6EAE00975C79 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2152A4F6EAE00975C79 /* NetworkError.swift */; };
+		063EB2182A4F6EC800975C79 /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2172A4F6EC800975C79 /* NetworkExecuter.swift */; };
+		063EB21B2A50A01C00975C79 /* DeezerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB21A2A50A01C00975C79 /* DeezerClient.swift */; };
+		063EB21E2A50A30400975C79 /* DeezerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB21D2A50A30400975C79 /* DeezerServiceProtocol.swift */; };
+		063EB2222A50A38600975C79 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2212A50A38600975C79 /* Categories.swift */; };
+		063EB2242A50A39200975C79 /* CategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2232A50A39200975C79 /* CategoriesData.swift */; };
+		063EB2262A50A55200975C79 /* DeezerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB2252A50A55200975C79 /* DeezerService.swift */; };
+		063EB22C2A50A92F00975C79 /* MusicRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB22B2A50A92F00975C79 /* MusicRepositoryProtocol.swift */; };
+		063EB22E2A50A9FD00975C79 /* MusicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063EB22D2A50A9FD00975C79 /* MusicRepository.swift */; };
+		06480B0B2A5349FA000FE06A /* DeezerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06480B0A2A5349FA000FE06A /* DeezerError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		063EB1FD2A4F6DE300975C79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 063EB1E82A4F6DE300975C79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 063EB1F02A4F6DE300975C79;
+			remoteInfo = DataProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063EB1F12A4F6DE300975C79 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		063EB1F42A4F6DE300975C79 /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		063EB1F52A4F6DE300975C79 /* DataProvider.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataProvider.docc; sourceTree = "<group>"; };
+		063EB1FB2A4F6DE300975C79 /* DataProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		063EB2002A4F6DE300975C79 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		063EB20F2A4F6E3100975C79 /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		063EB2112A4F6E5A00975C79 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		063EB2132A4F6E9300975C79 /* NetworkConstracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstracts.swift; sourceTree = "<group>"; };
+		063EB2152A4F6EAE00975C79 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		063EB2172A4F6EC800975C79 /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
+		063EB21A2A50A01C00975C79 /* DeezerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerClient.swift; sourceTree = "<group>"; };
+		063EB21D2A50A30400975C79 /* DeezerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerServiceProtocol.swift; sourceTree = "<group>"; };
+		063EB2212A50A38600975C79 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		063EB2232A50A39200975C79 /* CategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesData.swift; sourceTree = "<group>"; };
+		063EB2252A50A55200975C79 /* DeezerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerService.swift; sourceTree = "<group>"; };
+		063EB22B2A50A92F00975C79 /* MusicRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRepositoryProtocol.swift; sourceTree = "<group>"; };
+		063EB22D2A50A9FD00975C79 /* MusicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRepository.swift; sourceTree = "<group>"; };
+		06480B0A2A5349FA000FE06A /* DeezerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		063EB1EE2A4F6DE300975C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063EB1F82A4F6DE300975C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063EB1FC2A4F6DE300975C79 /* DataProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063EB1E72A4F6DE300975C79 = {
+			isa = PBXGroup;
+			children = (
+				063EB1F32A4F6DE300975C79 /* DataProvider */,
+				063EB1FF2A4F6DE300975C79 /* DataProviderTests */,
+				063EB1F22A4F6DE300975C79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		063EB1F22A4F6DE300975C79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				063EB1F12A4F6DE300975C79 /* DataProvider.framework */,
+				063EB1FB2A4F6DE300975C79 /* DataProviderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		063EB1F32A4F6DE300975C79 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				063EB2272A50A73A00975C79 /* Repository */,
+				063EB21F2A50A32B00975C79 /* Model */,
+				063EB21C2A50A1EC00975C79 /* Service */,
+				063EB2192A509E6800975C79 /* Client */,
+				063EB20E2A4F6E1D00975C79 /* Network */,
+				063EB1F42A4F6DE300975C79 /* DataProvider.h */,
+				063EB1F52A4F6DE300975C79 /* DataProvider.docc */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		063EB1FF2A4F6DE300975C79 /* DataProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				063EB2002A4F6DE300975C79 /* DataProviderTests.swift */,
+			);
+			path = DataProviderTests;
+			sourceTree = "<group>";
+		};
+		063EB20E2A4F6E1D00975C79 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				063EB20F2A4F6E3100975C79 /* HttpHeader.swift */,
+				063EB2112A4F6E5A00975C79 /* HttpMethod.swift */,
+				063EB2132A4F6E9300975C79 /* NetworkConstracts.swift */,
+				063EB2152A4F6EAE00975C79 /* NetworkError.swift */,
+				063EB2172A4F6EC800975C79 /* NetworkExecuter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		063EB2192A509E6800975C79 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				063EB21A2A50A01C00975C79 /* DeezerClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		063EB21C2A50A1EC00975C79 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				063EB21D2A50A30400975C79 /* DeezerServiceProtocol.swift */,
+				063EB2252A50A55200975C79 /* DeezerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		063EB21F2A50A32B00975C79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06480B092A5349FA000FE06A /* Error */,
+				063EB2202A50A35C00975C79 /* CategoriesData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		063EB2202A50A35C00975C79 /* CategoriesData */ = {
+			isa = PBXGroup;
+			children = (
+				063EB2212A50A38600975C79 /* Categories.swift */,
+				063EB2232A50A39200975C79 /* CategoriesData.swift */,
+			);
+			path = CategoriesData;
+			sourceTree = "<group>";
+		};
+		063EB2272A50A73A00975C79 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				063EB22B2A50A92F00975C79 /* MusicRepositoryProtocol.swift */,
+				063EB22D2A50A9FD00975C79 /* MusicRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		06480B092A5349FA000FE06A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				06480B0A2A5349FA000FE06A /* DeezerError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		063EB1EC2A4F6DE300975C79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063EB2022A4F6DE300975C79 /* DataProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		063EB1F02A4F6DE300975C79 /* DataProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063EB2052A4F6DE300975C79 /* Build configuration list for PBXNativeTarget "DataProvider" */;
+			buildPhases = (
+				063EB1EC2A4F6DE300975C79 /* Headers */,
+				063EB1ED2A4F6DE300975C79 /* Sources */,
+				063EB1EE2A4F6DE300975C79 /* Frameworks */,
+				063EB1EF2A4F6DE300975C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataProvider;
+			productName = DataProvider;
+			productReference = 063EB1F12A4F6DE300975C79 /* DataProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		063EB1FA2A4F6DE300975C79 /* DataProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063EB2082A4F6DE300975C79 /* Build configuration list for PBXNativeTarget "DataProviderTests" */;
+			buildPhases = (
+				063EB1F72A4F6DE300975C79 /* Sources */,
+				063EB1F82A4F6DE300975C79 /* Frameworks */,
+				063EB1F92A4F6DE300975C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063EB1FE2A4F6DE300975C79 /* PBXTargetDependency */,
+			);
+			name = DataProviderTests;
+			productName = DataProviderTests;
+			productReference = 063EB1FB2A4F6DE300975C79 /* DataProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		063EB1E82A4F6DE300975C79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					063EB1F02A4F6DE300975C79 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					063EB1FA2A4F6DE300975C79 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 063EB1EB2A4F6DE300975C79 /* Build configuration list for PBXProject "DataProvider" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 063EB1E72A4F6DE300975C79;
+			productRefGroup = 063EB1F22A4F6DE300975C79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				063EB1F02A4F6DE300975C79 /* DataProvider */,
+				063EB1FA2A4F6DE300975C79 /* DataProviderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		063EB1EF2A4F6DE300975C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063EB1F92A4F6DE300975C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063EB1ED2A4F6DE300975C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063EB21E2A50A30400975C79 /* DeezerServiceProtocol.swift in Sources */,
+				063EB2142A4F6E9300975C79 /* NetworkConstracts.swift in Sources */,
+				063EB2102A4F6E3100975C79 /* HttpHeader.swift in Sources */,
+				063EB22E2A50A9FD00975C79 /* MusicRepository.swift in Sources */,
+				063EB2122A4F6E5A00975C79 /* HttpMethod.swift in Sources */,
+				063EB21B2A50A01C00975C79 /* DeezerClient.swift in Sources */,
+				063EB22C2A50A92F00975C79 /* MusicRepositoryProtocol.swift in Sources */,
+				063EB2242A50A39200975C79 /* CategoriesData.swift in Sources */,
+				063EB2222A50A38600975C79 /* Categories.swift in Sources */,
+				063EB1F62A4F6DE300975C79 /* DataProvider.docc in Sources */,
+				063EB2162A4F6EAE00975C79 /* NetworkError.swift in Sources */,
+				063EB2262A50A55200975C79 /* DeezerService.swift in Sources */,
+				063EB2182A4F6EC800975C79 /* NetworkExecuter.swift in Sources */,
+				06480B0B2A5349FA000FE06A /* DeezerError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063EB1F72A4F6DE300975C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063EB2012A4F6DE300975C79 /* DataProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063EB1FE2A4F6DE300975C79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 063EB1F02A4F6DE300975C79 /* DataProvider */;
+			targetProxy = 063EB1FD2A4F6DE300975C79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063EB2032A4F6DE300975C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		063EB2042A4F6DE300975C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		063EB2062A4F6DE300975C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miniMusicApp.DataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		063EB2072A4F6DE300975C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miniMusicApp.DataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		063EB2092A4F6DE300975C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miniMusicApp.DataProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		063EB20A2A4F6DE300975C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miniMusicApp.DataProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		063EB1EB2A4F6DE300975C79 /* Build configuration list for PBXProject "DataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063EB2032A4F6DE300975C79 /* Debug */,
+				063EB2042A4F6DE300975C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063EB2052A4F6DE300975C79 /* Build configuration list for PBXNativeTarget "DataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063EB2062A4F6DE300975C79 /* Debug */,
+				063EB2072A4F6DE300975C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063EB2082A4F6DE300975C79 /* Build configuration list for PBXNativeTarget "DataProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063EB2092A4F6DE300975C79 /* Debug */,
+				063EB20A2A4F6DE300975C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 063EB1E82A4F6DE300975C79 /* Project object */;
+}

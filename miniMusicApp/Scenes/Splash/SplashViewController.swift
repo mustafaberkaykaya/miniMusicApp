@@ -62,7 +62,7 @@ extension SplashViewController: SplashViewRouteDelegate {
     
     func showHome() {
         guard let window = app.router.window else { return }
-        let homeViewController = CategoriesRouter.create()
+        let homeViewController = TabBarController()
         UIView.transition(with: window, duration: 1, options: .transitionFlipFromBottom, animations: {
             UIView.performWithoutAnimation {
                 window.rootViewController = homeViewController
