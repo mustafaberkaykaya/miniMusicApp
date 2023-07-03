@@ -8,11 +8,13 @@ target 'miniMusicApp' do
   # Pods for miniMusicApp
   # UI
   pod 'TinyConstraints', '~> 4.0'
-  
   pod 'lottie-ios'
   
   # Network
   pod 'Alamofire', '~> 5.6'
+  
+  # Helper
+  pod 'Kingfisher', '~> 7.0'
 
   target 'miniMusicAppTests' do
     inherit! :search_paths
@@ -35,5 +37,7 @@ target 'UIComponents' do
   pod 'lottie-ios'
   pod 'TinyConstraints', '~> 4.0'
   
+  # Helper
+  pod 'Kingfisher', '~> 7.0'
 
 end
