@@ -9,4 +9,5 @@ import Foundation
 
 public protocol MusicRepositoryProtocol {
     func getCategories(completion: @escaping(Result<Categories,DeezerError>) -> Void)
+    func getArtist(id: Int, completion: @escaping(Result<Artist,DeezerError>) -> Void)
 }

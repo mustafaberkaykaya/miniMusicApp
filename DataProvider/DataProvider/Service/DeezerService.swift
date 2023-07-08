@@ -16,4 +16,9 @@ final public class DeezerService: DeezerServiceProtocol {
     public func getCategories(completion: @escaping (Result<Categories, NetworkError>) -> Void) {
         NetworkExecuter.shared.execute(route: DeezerAPI.categories, responseModel: Categories.self, completion: completion)
     }
+    
+    public func getArtist(id: Int, completion: @escaping (Result<Artist, NetworkError>) -> Void) {
+        NetworkExecuter.shared.execute(route: DeezerAPI.artist(id: id), responseModel: Artist.self, completion: completion)
+    }
+    
 }
