@@ -14,6 +14,7 @@ final class CategoriesRouter {
         let musicRepository = MusicRepository(deezerService: app.service)
         let viewModel = CategoriesViewModel(musicRepository: musicRepository)
         let viewController = CategoriesViewController(viewModel: viewModel)
+        viewModel.routeDelegate = viewController
         return viewController
     }
 }

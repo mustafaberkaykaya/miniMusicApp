@@ -8,6 +8,7 @@
 import UIKit
 import TinyConstraints
 import UIComponents
+import DataProvider
 
 final class CategoriesViewController: BaseViewController<CategoriesViewModel> {
     
@@ -36,6 +37,13 @@ final class CategoriesViewController: BaseViewController<CategoriesViewModel> {
         viewModel.didLoad()
         subscribeViewModel()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
+    }
 }
 
 // MARK: - UILayout
@@ -46,7 +54,6 @@ extension CategoriesViewController {
     }
     
     private func addPageTitle() {
-        self.navigationController?.isNavigationBarHidden = true
         self.view.addSubview(symbolTitleLabel)
         symbolTitleLabel.centerXToSuperview()
         symbolTitleLabel.topToSuperview(usingSafeArea: true).constant = 10
@@ -85,5 +92,18 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
         } else {
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItem(indexPath: indexPath)
+    }
+}
+
+// MARK: - RouteDelegate
+extension CategoriesViewController: CategoriesRouteDelegate {
+
+    func showArtist(category: CategoriesData) {
+        let viewController = ArtistsRouter.create(category: category)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

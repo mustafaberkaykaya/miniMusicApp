@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		063EB20C2A4F6DEE00975C79 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EB20B2A4F6DEE00975C79 /* DataProvider.framework */; };
 		063EB20D2A4F6DEE00975C79 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 063EB20B2A4F6DEE00975C79 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06480B112A5485B2000FE06A /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06480B102A5485B2000FE06A /* ArtistsViewModel.swift */; };
+		06480B132A548633000FE06A /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06480B122A548633000FE06A /* ArtistsViewController.swift */; };
+		06480B152A548677000FE06A /* ArtistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06480B142A548677000FE06A /* ArtistRouter.swift */; };
 		0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0656E06C2A4B34CA00288E00 /* AppDelegate.swift */; };
 		0656E0762A4B34CC00288E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0752A4B34CC00288E00 /* Assets.xcassets */; };
 		0656E0792A4B34CC00288E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0656E0772A4B34CC00288E00 /* LaunchScreen.storyboard */; };
@@ -73,6 +76,9 @@
 
 /* Begin PBXFileReference section */
 		063EB20B2A4F6DEE00975C79 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06480B102A5485B2000FE06A /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
+		06480B122A548633000FE06A /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
+		06480B142A548677000FE06A /* ArtistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRouter.swift; sourceTree = "<group>"; };
 		0656E0692A4B34CA00288E00 /* miniMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0656E06C2A4B34CA00288E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0656E0752A4B34CC00288E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +148,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06480B0F2A54859B000FE06A /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				06480B102A5485B2000FE06A /* ArtistsViewModel.swift */,
+				06480B122A548633000FE06A /* ArtistsViewController.swift */,
+				06480B142A548677000FE06A /* ArtistRouter.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
 		0656E0602A4B34CA00288E00 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +224,7 @@
 		0656E0A32A4B676B00288E00 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				06480B0F2A54859B000FE06A /* Artists */,
 				065DDD072A4DCC6D00C861AA /* Favorites */,
 				0656E0B32A4B6DC100288E00 /* Categories */,
 				0656E0AC2A4B6AB700288E00 /* Splash */,
@@ -544,9 +561,12 @@
 				065DDD092A4DCC9600C861AA /* FavoritesViewController.swift in Sources */,
 				065DDD0D2A4DCCAB00C861AA /* FavoritesRouter.swift in Sources */,
 				0656E0B72A4B731000288E00 /* CategoriesViewController.swift in Sources */,
+				06480B112A5485B2000FE06A /* ArtistsViewModel.swift in Sources */,
 				06EE95022A4F2D1200E2AA1B /* TabBarController.swift in Sources */,
 				0656E0B92A4B73DD00288E00 /* CategoriesRouter.swift in Sources */,
+				06480B152A548677000FE06A /* ArtistRouter.swift in Sources */,
 				0656E09E2A4B570A00288E00 /* AppContainer.swift in Sources */,
+				06480B132A548633000FE06A /* ArtistsViewController.swift in Sources */,
 				0656E0B02A4B6BF300288E00 /* SplashViewController.swift in Sources */,
 				0656E06D2A4B34CA00288E00 /* AppDelegate.swift in Sources */,
 				0656E0B22A4B6D9000288E00 /* SplashRouter.swift in Sources */,
