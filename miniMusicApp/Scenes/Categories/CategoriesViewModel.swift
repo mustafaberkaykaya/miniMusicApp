@@ -20,21 +20,26 @@ protocol CategoriesEventSource {
 
 protocol CategoriesProtocol: CategoriesDataSource, CategoriesEventSource {
     func didLoad()
+    func didSelectItem(indexPath: IndexPath)
+}
+
+protocol CategoriesRouteDelegate: AnyObject {
+    func showArtist(category: CategoriesData)
 }
 
 final class CategoriesViewModel: BaseViewModel, CategoriesProtocol {
     
-    // Privates
-    private var cellItems: [CategoriesCellProtocol] = []
-    
     // EventSource
     var reloadData: VoidClosure?
+    weak var routeDelegate: CategoriesRouteDelegate?
     
     // DataSource
     var musicRepository: MusicRepositoryProtocol
     var numberOfItems: Int {
        return cellItems.count
     }
+    var cellItems: [CategoriesCellProtocol] = []
+    var categories: [CategoriesData] = []
     
     func cellForItemAt(indexPath: IndexPath) -> CategoriesCellProtocol {
       return cellItems[indexPath.row]
@@ -49,6 +54,7 @@ final class CategoriesViewModel: BaseViewModel, CategoriesProtocol {
             switch result {
             case .success(let response):
                 guard let data = response.data else { return }
+                self.categories = data
                 self.cellItems = data.map({ category in
                     return CategoriesCellModel(categoryImageView: category.pictureMedium, categoryName: category.name)
                 })
@@ -58,5 +64,13 @@ final class CategoriesViewModel: BaseViewModel, CategoriesProtocol {
             }
         }
     }
-
 }
+
+// MARK: - Action
+extension CategoriesViewModel {
+    func didSelectItem(indexPath: IndexPath) {
+        let category = categories[indexPath.row]
+        routeDelegate?.showArtist(category: category)
+    }
+}
+

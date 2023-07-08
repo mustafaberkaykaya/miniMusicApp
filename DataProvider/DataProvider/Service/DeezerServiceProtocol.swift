@@ -9,4 +9,5 @@ import Foundation
 
 public protocol DeezerServiceProtocol {
     func getCategories(completion: @escaping (Result<Categories, NetworkError>) -> Void)
+    func getArtist(id: Int, completion: @escaping(Result<Artist, NetworkError>) -> Void)
 }
