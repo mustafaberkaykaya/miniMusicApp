@@ -29,11 +29,17 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController {
         subscribeLoading()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isTranslucent = false
+        self.tabBarController?.tabBar.backgroundColor = .white
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
+    }
+    
     private func configureContents() {
-        self.tabBarController?.tabBar.isTranslucent = true
         view.backgroundColor = .white
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

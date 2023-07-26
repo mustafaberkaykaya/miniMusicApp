@@ -104,6 +104,6 @@ extension CategoriesViewController: CategoriesRouteDelegate {
 
     func showArtist(category: CategoriesData) {
         let viewController = ArtistsRouter.create(category: category)
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: false)
     }
 }

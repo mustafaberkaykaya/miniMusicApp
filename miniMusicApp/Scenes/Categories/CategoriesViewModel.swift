@@ -50,6 +50,7 @@ final class CategoriesViewModel: BaseViewModel, CategoriesProtocol {
     }
     
     func didLoad() {
+        showLoading?()
         musicRepository.getCategories { result in
             switch result {
             case .success(let response):
@@ -59,8 +60,10 @@ final class CategoriesViewModel: BaseViewModel, CategoriesProtocol {
                     return CategoriesCellModel(categoryImageView: category.pictureMedium, categoryName: category.name)
                 })
                 self.reloadData?()
+                self.hideLoading?()
             case .failure(let err):
                 print(err.localizedDescription)
+                self.hideLoading?()
             }
         }
     }

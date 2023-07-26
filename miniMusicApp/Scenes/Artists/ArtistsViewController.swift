@@ -7,6 +7,7 @@
 
 import UIKit
 import TinyConstraints
+import DataProvider
 import UIComponents
 
 final class ArtistsViewController: BaseViewController<ArtistsViewModel> {
@@ -49,9 +50,6 @@ extension ArtistsViewController {
     }
     
     private func addPageTitle() {
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = viewModel.category.name
     }
     
@@ -78,4 +76,17 @@ extension ArtistsViewController: UICollectionViewDelegate, UICollectionViewDataS
             return UICollectionViewCell()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItem(indexPath: indexPath)
+    }
+}
+
+
+extension ArtistsViewController: ArtistsRouteDelegate {
+    func showArtistDetail(artist: ArtistData) {
+        let viewController = ArtistDetailRouter.create(artists: artist)
+        navigationController?.pushViewController(viewController, animated: false)
+    }
+    
 }

@@ -14,6 +14,7 @@ final class ArtistsRouter {
         let musicRepository = MusicRepository(deezerService: app.service)
         let viewModel = ArtistsViewModel(category: category, musicRepository: musicRepository)
         let viewController = ArtistsViewController(viewModel: viewModel)
+        viewModel.routeDelegate = viewController
         return viewController
     }
 }
