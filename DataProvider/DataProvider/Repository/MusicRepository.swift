@@ -42,4 +42,17 @@ final public class MusicRepository: MusicRepositoryProtocol {
         }
     }
     
+    public func getAlbums(id: Int, completion: @escaping (Result<Album, DeezerError>) -> Void) {
+        deezerService.getAlbums(id: id) { result in
+            switch result {
+            case .success(let getAlbumsResponse):
+                return completion(.success(getAlbumsResponse))
+            case .failure(let error):
+                let deezerErrorData = DeezerErrorData(type: nil, message: error.localizedDescription, code: nil)
+                let deezerError = DeezerError(error: deezerErrorData)
+                return completion(.failure(deezerError))
+            }
+        }
+    }
+    
 }
