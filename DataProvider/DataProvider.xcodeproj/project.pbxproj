@@ -28,6 +28,8 @@
 		06666AA42A59C0B600E3DFE5 /* ArtistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06666AA32A59C0B600E3DFE5 /* ArtistData.swift */; };
 		06830D0D2A6C49C9006D7B40 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06830D0C2A6C49C9006D7B40 /* Album.swift */; };
 		06830D0F2A6C49FF006D7B40 /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06830D0E2A6C49FF006D7B40 /* AlbumData.swift */; };
+		06F389852A7B17FC000D2EA2 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F389842A7B17FC000D2EA2 /* Tracks.swift */; };
+		06F389872A7D394E000D2EA2 /* TracksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F389862A7D394E000D2EA2 /* TracksData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		06666AA32A59C0B600E3DFE5 /* ArtistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistData.swift; sourceTree = "<group>"; };
 		06830D0C2A6C49C9006D7B40 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		06830D0E2A6C49FF006D7B40 /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
+		06F389842A7B17FC000D2EA2 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		06F389862A7D394E000D2EA2 /* TracksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		063EB21F2A50A32B00975C79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06F389832A7B1648000D2EA2 /* TracksData */,
 				06830D0B2A6C4974006D7B40 /* AlbumData */,
 				06666AA52A59F56B00E3DFE5 /* ArtistData */,
 				06480B092A5349FA000FE06A /* Error */,
@@ -206,6 +211,15 @@
 				06830D0E2A6C49FF006D7B40 /* AlbumData.swift */,
 			);
 			path = AlbumData;
+			sourceTree = "<group>";
+		};
+		06F389832A7B1648000D2EA2 /* TracksData */ = {
+			isa = PBXGroup;
+			children = (
+				06F389842A7B17FC000D2EA2 /* Tracks.swift */,
+				06F389862A7D394E000D2EA2 /* TracksData.swift */,
+			);
+			path = TracksData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +340,8 @@
 				063EB2122A4F6E5A00975C79 /* HttpMethod.swift in Sources */,
 				063EB21B2A50A01C00975C79 /* DeezerClient.swift in Sources */,
 				063EB22C2A50A92F00975C79 /* MusicRepositoryProtocol.swift in Sources */,
+				06F389872A7D394E000D2EA2 /* TracksData.swift in Sources */,
+				06F389852A7B17FC000D2EA2 /* Tracks.swift in Sources */,
 				063EB2242A50A39200975C79 /* CategoriesData.swift in Sources */,
 				063EB2222A50A38600975C79 /* Categories.swift in Sources */,
 				06830D0F2A6C49FF006D7B40 /* AlbumData.swift in Sources */,

@@ -11,4 +11,5 @@ public protocol MusicRepositoryProtocol {
     func getCategories(completion: @escaping(Result<Categories,DeezerError>) -> Void)
     func getArtist(id: Int, completion: @escaping(Result<Artist,DeezerError>) -> Void)
     func getAlbums(id: Int, completion: @escaping(Result<Album,DeezerError>) -> Void)
+    func getTrackList(id: Int, completion: @escaping(Result<Tracks,DeezerError>) -> Void)
 }

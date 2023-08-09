@@ -9,6 +9,7 @@ import UIKit
 import TinyConstraints
 import Kingfisher
 import UIComponents
+import DataProvider
 
 final class ArtistDetailViewController: BaseViewController<ArtistDetailViewModel> {
     
@@ -84,5 +85,16 @@ extension ArtistDetailViewController: UITableViewDelegate, UITableViewDataSource
             return UIScreen.main.bounds.height / 7
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectItem(indexPath: indexPath)
+    }
 }
 
+// MARK: - RouteDelegate
+extension ArtistDetailViewController: ArtistsDetailRouteDelegate {
+    func showAlbum(album: AlbumData) {
+        let viewController = AlbumRouter.create(album: album)
+        navigationController?.pushViewController(viewController, animated: false)
+    }
+}

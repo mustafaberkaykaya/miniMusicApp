@@ -20,15 +20,22 @@ protocol ArtistDetailEventSource {
 
 protocol ArtistDetailProtocol: ArtistDetailDataSource, ArtistDetailEventSource {
     func didLoad()
+    func didSelectItem(indexPath: IndexPath)
+}
+
+protocol ArtistsDetailRouteDelegate: AnyObject {
+    func showAlbum(album: AlbumData)
 }
 
 final class ArtistDetailViewModel: BaseViewModel, ArtistDetailProtocol {
  
     //EventSource
     var reloadData: VoidClosure?
+    weak var routeDelegate: ArtistsDetailRouteDelegate?
     
     //Data Source
     var artists: ArtistData
+    var albumData: [AlbumData] = []
     var musicRepository: MusicRepositoryProtocol
     var cellItems: [AlbumCellProtocol] = []
     
@@ -56,6 +63,7 @@ final class ArtistDetailViewModel: BaseViewModel, ArtistDetailProtocol {
             switch result {
             case .success(let response):
                 guard let data = response.data else { return }
+                self.albumData = data
                 self.cellItems = data.map({ album in
                     return AlbumCellModel(albumImageUrl: album.coverMedium, albumReleaseDayText: album.releaseDate, albumNameText: album.title)
                 })
@@ -67,5 +75,13 @@ final class ArtistDetailViewModel: BaseViewModel, ArtistDetailProtocol {
             }
         }
     }
-    
 }
+
+// MARK: - Action
+extension ArtistDetailViewModel {
+    func didSelectItem(indexPath: IndexPath) {
+         let album = albumData[indexPath.row]
+         routeDelegate?.showAlbum(album: album)
+    }
+}
+
