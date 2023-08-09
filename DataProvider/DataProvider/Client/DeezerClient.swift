@@ -13,6 +13,7 @@ public enum DeezerAPI : BaseClientGenerator {
     case categories
     case artist(id: Int)
     case album(id: Int)
+    case trackList(id: Int)
     
     public var scheme: String { "https" }
     
@@ -28,6 +29,8 @@ public enum DeezerAPI : BaseClientGenerator {
             return "/genre/\(id)/artists"
         case .album(let id):
             return "/artist/\(id)/albums"
+        case .trackList(let id):
+            return "/album/\(id)"
         }
     }
     
@@ -40,6 +43,8 @@ public enum DeezerAPI : BaseClientGenerator {
         case .artist:
             break
         case .album:
+            break
+        case .trackList:
             break
         }
         return items
