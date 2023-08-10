@@ -77,6 +77,7 @@ final class AlbumViewModel: BaseViewModel, AlbumProtocol {
     }
     
     private func downloadAndPlayAudio(url: URL) {
+        self.audioPlayer?.stop()
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 print("Error downloading audio: \(error)")

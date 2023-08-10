@@ -25,6 +25,16 @@ final class AlbumViewController: BaseViewController<AlbumViewModel> {
         viewModel.didLoad()
         subscribeViewModel()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.audioPlayer?.stop()
+    }
 }
 
 // MARK: - UILayout
