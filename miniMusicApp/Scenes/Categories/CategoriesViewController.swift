@@ -15,7 +15,7 @@ final class CategoriesViewController: BaseViewController<CategoriesViewModel> {
     private let symbolTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.text = "Categories"
+        label.text = "Kategoriler"
         return label
     }()
     
